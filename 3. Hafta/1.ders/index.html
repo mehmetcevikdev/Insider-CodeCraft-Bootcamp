@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yapılacaklar Listesi</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Yapılacaklar Listesi</h1>
+      <form id="todo-form">
+        <div class="todo-inputs">
+          <input
+            type="text"
+            id="todo-title"
+            placeholder="Görevinizi giriniz!"
+          />
+          <button class="btn" type="submit">Ekle</button>
+        </div>
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script>
+      $(document).ready(() => {
+        const $todoForm = $("#todo-form");
+        const $todoList = $("#todo-list");
+
+        $todoForm.on("submit", (e) => {
+          e.preventDefault();
+          const $title = $("#todo-title").val();
+
+          if (!$title) {
+            alert("Görev eklemek zorunludur!");
+            return;
+          }
+
+          const $li = $(`
+            <li>
+              <div class="list-content">
+                <p>${$title}</p>
+              </div>
+              <div class="button-wrapper">
+                <button class="btn complete-btn">Tamamla</button>
+                <button class="btn delete-btn">Sil</button>
+              </div>
+            </li>
+            `);
+
+          $todoList.append($li);
+          $todoForm.trigger("reset");
+        });
+
+        $todoList.on("click", ".complete-btn", function () {
+          $(this).toggleClass("completed");
+          $(this).text(
+            $(this).hasClass("completed") ? "Tamamlandı" : "Tamamla"
+          );
+        });
+        $todoList.on("click", ".delete-btn", function () {
+          $(this).closest("li").remove();
+        });
+      });
+    </script>
+  </body>
+</html>
