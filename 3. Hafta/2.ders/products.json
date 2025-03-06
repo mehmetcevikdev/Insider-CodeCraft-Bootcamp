@@ -1,0 +1,31 @@
+[
+    {
+      "name": "Ürün 1",
+      "price": "1500 TL",
+      "image1":"./images/product1/1.png",
+      "image2":"./images/product1/2.png",
+      "link": "#"
+    },
+    {
+      "name": "Ürün 2",
+      "price": "700 TL",
+      "image1":"./images/product2/1.png",
+      "image2":"./images/product2/2.png",
+      "link": "#"
+    },
+    {
+      "name": "Ürün 3",
+      "price": "1200 TL",
+      "image1":"./images/product3/1.png",
+      "image2":"./images/product3/2.png",
+      "link": "#"
+    },
+    {
+      "name": "Ürün 4",
+      "price": "400 TL",
+      "image1":"./images/product4/1.png",
+      "image2":"./images/product4/2.png",
+      "link": "#"
+    }
+  ]
+  
