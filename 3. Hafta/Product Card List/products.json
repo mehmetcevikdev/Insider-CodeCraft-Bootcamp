@@ -1,0 +1,39 @@
+[
+    {
+      "name": "Ürün 1",
+      "price": 1500,
+      "discount":10,
+      "image1":"./images/product1/1.png",
+      "image2":"./images/product1/2.png",
+      "link": "1.urun.com",
+      "details":"1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illo voluptatem! Ab perspiciatis consectetur unde sequi exercitationem repellendus, consequatur sit?"
+    },
+    {
+      "name": "Ürün 2",
+      "price": 700,
+      "discount":20,
+      "image1":"./images/product2/1.png",
+      "image2":"./images/product2/2.png",
+      "link": "2.urun.com",
+      "details":"2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illo voluptatem! Ab perspiciatis consectetur unde sequi exercitationem repellendus, consequatur sit?"
+    },
+    {
+      "name": "Ürün 3",
+      "price": 1200,
+      "discount":15,
+      "image1":"./images/product3/1.png",
+      "image2":"./images/product3/2.png",
+      "link": "3.urun.com",
+      "details":"3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illo voluptatem! Ab perspiciatis consectetur unde sequi exercitationem repellendus, consequatur sit?"
+    },
+    {
+      "name": "Ürün 4",
+      "price": 400,
+      "discount":30,
+      "image1":"./images/product4/1.png",
+      "image2":"./images/product4/2.png",
+      "link": "4.urun.com",
+      "details":"4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illo voluptatem! Ab perspiciatis consectetur unde sequi exercitationem repellendus, consequatur sit?"
+    }
+  ]
+  
