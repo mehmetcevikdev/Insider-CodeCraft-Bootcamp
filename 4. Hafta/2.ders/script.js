@@ -15,7 +15,6 @@ const fetchUsers = async () => {
 
   try {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
-    if (!response.ok) throw new Error("API'den veri çekilemedi");
 
     const users = await response.json();
     localStorage.setItem(storageKey, JSON.stringify(users));
